@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_74fa528fdef971fff984d0460d807635 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_74fa528fdef971fff984d0460d807635" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_74fa528fdef971fff984d0460d807635 = L.map(
+                "map_74fa528fdef971fff984d0460d807635",
+                {
+                    center: [29.36003483162285, 47.92613983154297],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d41879986488821ef60d0febbfd2011b = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_d41879986488821ef60d0febbfd2011b.addTo(map_74fa528fdef971fff984d0460d807635);
+        
+    
+            var marker_1b007cf36a0e52b3835034d2d83da8ab = L.marker(
+                [29.36003483162285, 47.92613983154297],
+                {}
+            ).addTo(map_74fa528fdef971fff984d0460d807635);
+        
+    
+        var popup_2eafcfef9577711454d5032fe5a4af2b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fe46975bc682b7b83f5e340813938047 = $(`<div id="html_fe46975bc682b7b83f5e340813938047" style="width: 100.0%; height: 100.0%;"><i>The center of map</i></div>`)[0];
+                popup_2eafcfef9577711454d5032fe5a4af2b.setContent(html_fe46975bc682b7b83f5e340813938047);
+            
+        
+
+        marker_1b007cf36a0e52b3835034d2d83da8ab.bindPopup(popup_2eafcfef9577711454d5032fe5a4af2b)
+        ;
+
+        
+    
+    
+            marker_1b007cf36a0e52b3835034d2d83da8ab.bindTooltip(
+                `<div>
+                     Center
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1e78ff5b1c8b5531fecabb8ac3bdcc7d = L.marker(
+                [29.0, 47.0],
+                {}
+            ).addTo(map_74fa528fdef971fff984d0460d807635);
+        
+    
+            var icon_6c661dded5c06db1f0e939776bb01a46 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "magnet", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_1e78ff5b1c8b5531fecabb8ac3bdcc7d.setIcon(icon_6c661dded5c06db1f0e939776bb01a46);
+        
+    
+        var popup_cc17ca9dcfbe8107c7881f9f4f50c139 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_7a3a7ba37ec507a377173380b71a4d65 = $(`<div id="html_7a3a7ba37ec507a377173380b71a4d65" style="width: 100.0%; height: 100.0%;">Using the magnet icon from font-awesome.<br/>                   Check out more <a href="https://lab.artlung.com/font-awesome-sample/" target="_blank">here</a><br/>                   </div>`)[0];
+                popup_cc17ca9dcfbe8107c7881f9f4f50c139.setContent(html_7a3a7ba37ec507a377173380b71a4d65);
+            
+        
+
+        marker_1e78ff5b1c8b5531fecabb8ac3bdcc7d.bindPopup(popup_cc17ca9dcfbe8107c7881f9f4f50c139)
+        ;
+
+        
+    
+    
+            marker_1e78ff5b1c8b5531fecabb8ac3bdcc7d.bindTooltip(
+                `<div>
+                     Font awesome example
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_20d6315f86a644b2c0f5fe14f4491560 = L.marker(
+                [29.0, 46.0],
+                {}
+            ).addTo(map_74fa528fdef971fff984d0460d807635);
+        
+    
+            var icon_d488eba030361e1027552fdb9df12b07 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-plane", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_20d6315f86a644b2c0f5fe14f4491560.setIcon(icon_d488eba030361e1027552fdb9df12b07);
+        
+    
+        var popup_77f4e126ce69637555f108c164188575 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_af23169144b4ef084386d8afccca8f1a = $(`<div id="html_af23169144b4ef084386d8afccca8f1a" style="width: 100.0%; height: 100.0%;">                   <img src="https://avatars.githubusercontent.com/u/2918581?v=4" alt="Bootstrap" style="max-width:100%;max-height:100%"><br/>                   <h4>                   glyphicon-plane icon from bootstrap.<br/>                   </h4>                   <h5>Check out more <a href="https://getbootstrap.com/docs/3.3/components/" target="_blank">here</a></h5>                   </div>`)[0];
+                popup_77f4e126ce69637555f108c164188575.setContent(html_af23169144b4ef084386d8afccca8f1a);
+            
+        
+
+        marker_20d6315f86a644b2c0f5fe14f4491560.bindPopup(popup_77f4e126ce69637555f108c164188575)
+        ;
+
+        
+    
+    
+            marker_20d6315f86a644b2c0f5fe14f4491560.bindTooltip(
+                `<div>
+                     Bootstrap example
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
