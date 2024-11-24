@@ -1,4 +1,4 @@
-                                                                                  **  Folium for interactive maps in python**
+                                          **  Folium for interactive maps in python**
 
 Folium is built on the data wrangling strengths of the Python ecosystem and the mapping strengths of the Leaflet.js (JavaScript) library. Simply, manipulate your data in Python, then visualize it on a leaflet map via Folium. Folium makes it easy to visualize data that’s been manipulated in Python, on an interactive Leaflet map. This library has a number of built-in tilesets from OpenStreetMap, Mapbox
 
